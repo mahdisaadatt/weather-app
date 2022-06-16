@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navContainer">
+        <div class="searchBar">
+          <input type="text" class="inputElem" placeholder="Search location" />
+          <img class="searchBtn" src="./assets/img/icons/search-white.svg" alt="search" />
+        </div>
+        <div class="searchedLocation">
+          <h4 class="title">Most Searched Location</h4>
+          <ul class="listContainer">
+            <li class="defaultLink links">Tehran</li>
+            <li class="defaultLink links">Manchester</li>
+            <li class="defaultLink links">New York</li>
+            <li class="defaultLink links">California</li>
+          </ul>
+        </div>
+        <div class="details">
+          <h4 class="title">Weather Details</h4>
+          <div class="detailsInfo">
+            <p>Cloudy<span id="cloudy">86%</span></p>
+            <p>Humidity<span id="humidity">62%</span></p>
+            <p>Wind<span id="wind">8km/h</span></p>
+            <p>Pressure<span id="pressure">1019</span></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="searchBar">
+          <input type="text" class="inputElem" placeholder="Search location" />
+          <img class="searchBtn" src="./assets/img/icons/search-white.svg" alt="search" />
+        </div>
+        <div class="secContainer">
+          <h2 id="temp">08°</h2>
+          <div>
+            <h2 id="cityName">London</h2>
+            <p id="date">06:09 - Sunday, 6 Oct '19</p>
+          </div>
+          <div>
+            <img src="./assets/img/icons/rain.svg" alt="Rainy" id="weatherImg" />
+            <p id="weatherStatus">Rainy</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
